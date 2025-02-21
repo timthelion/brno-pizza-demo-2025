@@ -1,0 +1,15 @@
+[project]
+name = "jwt-token-generator"
+version = "0.1.0"
+description = "CLI tool to generate JWT tokens"
+requires-python = ">=3.7"
+dependencies = [
+    "PyJWT==2.10.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+jwt-gen = "jwt_token_generator:main"
